@@ -71,10 +71,10 @@ const Index = ({ dataID, onClose }) => {
 
           <EditFilled
             className={`${
-              formData?.[0].Role === "Administrator" && formData[0].id !== dataID? "" : "icon-disable"
+              formData?.[0].Role === "Administrator" ? "" : "icon-disable"
             }`}
             onClick={() => {
-              if (data.Role === "Administrator" && formData[0].id !== dataID) {
+              if (data.Role === "Administrator") {
                 editHandler(dataID);
               }
             }}
@@ -85,7 +85,7 @@ const Index = ({ dataID, onClose }) => {
               open={isModalOpen}
               footer={null}
               onCancel={handleCancel}
-              bodyStyle={{ minHeight: 550 }}
+              
             >
               <EmployeeForm
                 value={data}

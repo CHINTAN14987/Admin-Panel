@@ -89,10 +89,12 @@ input:focus {
 .form_container {
   display: flex;
   justify-content: center;
-  min-height: 40rem;
+  min-height: 25rem;
   padding: 2rem 0;
 }
-
+.ant-modal-content{
+  padding: 10px !important;
+}
 .form_wrapper button {
   height: 3rem !important;
   font-size: 18px !important;
