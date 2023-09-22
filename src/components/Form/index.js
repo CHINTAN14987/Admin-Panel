@@ -202,7 +202,7 @@ export default (props) => {
           style={backGround && { background: "#333" }}
           onClick={value ? editHandler : submitHandler}
         >
-          SignUp
+          Submit
         </Button>
       </Form>
     </div>
