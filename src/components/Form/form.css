@@ -1,0 +1,102 @@
+.id,
+.Image {
+  display: none;
+}
+
+.item_wrapper input,
+.select_item_wrapper textarea {
+  border-radius: 0 !important;
+  border: none;
+}
+
+.item_wrapper {
+  position: relative;
+  margin: 10px 0;
+}
+
+.item_wrapper label,
+.Role label {
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff4d4f;
+}
+#lightBgSelect .ant-select-selector {
+  /* background-color: #d9d9d9 !important; */
+}
+#darkBgSelect .ant-select-selector {
+  background-color: #333 !important;
+  border: none !important;
+}
+
+#lightBgSelect .ant-select {
+  border: 1.5px solid #ff4d4f !important;
+}
+.ant-select-selection-placeholder {
+  color: #ff4d4f !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+#darkBgSelect .ant-select-selection-placeholder {
+  color: #d3d3d3 !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.select_item_wrapper textarea:focus {
+  box-shadow: none !important;
+  border-bottom: 1px solid #ff4d4f !important;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+.inputdarkBg:focus {
+  background-color: #d3d3d3 !important;
+}
+
+.Role {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:focus,
+.ant-select-selector:active,
+.ant-select-open .ant-select-selector {
+  border-color: #d9d9d9 !important;
+  box-shadow: none !important;
+}
+
+.Role .ant-select-selector {
+  border-radius: 0 !important;
+  border: none !important;
+}
+.form_wrapper {
+  width: 50%;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.modal_form {
+  width: 90%;
+}
+.form_container {
+  display: flex;
+  justify-content: center;
+  min-height: 40rem;
+  padding: 2rem 0;
+}
+
+.form_wrapper button {
+  height: 3rem !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  border-radius: 0 !important;
+ 
+}

@@ -1,0 +1,28 @@
+.img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-wrapper span{
+    font-size: 25px;
+}
+.img-wrapper img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.detail-container>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+
+}
+.detail-container * span{
+    font-weight: 800;
+}
+
+.detail-container>div>span:nth-child(2){
+    color: grey;
+    font-weight: 700;
+}
