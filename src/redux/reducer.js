@@ -36,30 +36,11 @@ const appReducer = createSlice({
     backGround: (state, action) => {
       return { ...state, bgColor: action.payload };
     },
-    sortTable: (state, action) => {
-      const newData = [...state.details];
-      const sorted = newData.sort((a, b) => {
-        let fa = a?.[action.payload]?.toLowerCase() || "";
-        let fb = b?.[action.payload]?.toLowerCase() || "";
-        if (fa < fb) {
-          return -1;
-        }
-        if (fa > fb) {
-          return 1;
-        }
-        return 0;
-      });
-      return {
-        ...state,
-        details: sorted,
-      };
-    },
   },
 });
 export const {
   addDetails,
   deleteFormItem,
-  sortTable,
   editFormItem,
   isFormValidated,
   backGround,
